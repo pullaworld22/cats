@@ -61,7 +61,8 @@ export default function Post({ post, socialImage, relatedPosts }) {
   });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
-    metadata.title = `${title} - ${siteMetadata.title}`;
+    //metadata.title = `${title} - ${siteMetadata.title}`;
+    metadata.title = `${title}`;
     metadata.og.title = metadata.title;
     metadata.twitter.title = metadata.title;
   }
