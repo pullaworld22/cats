@@ -31,7 +31,8 @@ export default function Page({ page, breadcrumbs }) {
   });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
-    metadata.title = `${title} - ${siteMetadata.title}`;
+    //metadata.title = `${title} - ${siteMetadata.title}`;
+    metadata.title = `${title}`;
     metadata.og.title = metadata.title;
     metadata.twitter.title = metadata.title;
   }
