@@ -11,6 +11,6 @@ export default function postAPI(req, res) {
        //res.status(200).json({name : queryObject});
      }
   else
-    res.redirect('https://life4animals.vercel.app/posts/' + JSON.stringify(queryObject.id).substring(1, queryObject.id.length));
+    res.redirect('https://domainvercel/posts/' + JSON.stringify(queryObject.id).substring(1, queryObject.id.length));
     
 }
