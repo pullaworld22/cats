@@ -13,7 +13,8 @@
     "format:no-path": "yarn lint:no-path --fix",
     "lint": "eslint .",
     "lint:no-path": "eslint",
-    "start": "next start -p $PORT",
+    "start": "serve -s build",
+    "heroku-postbuild": "npm run build",
     "prepare": "husky install"
   },
   "lint-staged": {
