@@ -11,5 +11,4 @@ const path = url.parse(req.url).path;
      {
       return NextResponse.redirect('https://tiplolo.com'+path)
      }
-   } 
 }
